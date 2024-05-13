@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import ChooseSendRecieve from '../components/ChooseSendReceive.vue';
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <ChooseSendRecieve/>
   </main>
 </template>
