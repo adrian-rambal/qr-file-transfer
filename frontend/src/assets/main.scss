@@ -1,6 +1,5 @@
 // customizations here
 
-@import "node_modules/bulma/bulma.scss";
-p {
-    color: red;
-}
+@forward "~bulma/sass/base";
+@forward "~bulma/sass/utilities";
+@forward "~bulma/sass/themes";
