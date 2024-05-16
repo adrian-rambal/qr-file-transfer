@@ -1,6 +1,9 @@
 
 <template>
      <section class="section">
+        <figure class="image image is-128x128">
+          <img height="800" weight="800" src="@/assets/qr-logo.svg"/>
+        </figure>
         <div class="container">
         <h1 class="title">
             Hello World
