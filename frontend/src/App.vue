@@ -1,18 +1,10 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
+import  Header from '@/components/Header.vue'
 </script>
 
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <div class="navbar-item">
-        <figure class="image image is-128x128">
-          <svg height="800" weight="800" src="@/assets/qr-logo.svg"/>
-        </figure>
-        <span>{{$t('message.appName')}}</span>
-      </div>
-    </div>
-  </nav>
+  <Header />
   <RouterView />
   <footer class="footer">
     <div class="content has-text-centered">
