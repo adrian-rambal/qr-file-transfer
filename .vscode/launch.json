@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-QrApplication<qr>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.filetransfer.qr.QrApplication",
+            "projectName": "qr",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
