@@ -4,7 +4,8 @@ import MiniComponent from "@/components/MiniComponent.vue"
 
 <template>
      <section class="section">
-        <figure class="image image is-128x128">
+
+        <!-- <figure class="image image is-128x128">
           <img height="800" weight="800" src="@/assets/qr-logo.svg"/>
         </figure>
         <div class="container">
@@ -15,7 +16,7 @@ import MiniComponent from "@/components/MiniComponent.vue"
             My first website with <strong>Bulma</strong>!
         </p>
         </div>
-        <MiniComponent></MiniComponent>
+        <MiniComponent></MiniComponent> -->
   </section>
 </template>
 

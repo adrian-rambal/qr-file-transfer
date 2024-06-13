@@ -1,25 +1,21 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import  Header from '@/components/Header.vue'
+import  Header from '@/components/TheHeader.vue'
+import Footer from '@/components/TheFooter.vue'
 </script>
 
 <template>
-  <Header />
-  <RouterView />
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        <strong>{{$t('message.appName')}}</strong> {{$t('message.footer.authoring')}}.
-        {{$t('message.footer.sourceCodeLicensed')}}
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
-        {{$t('message.footer.websiteLicensed')}}
-        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
-          >CC BY NC SA 4.0</a
-        >.
-      </p>
-    </div>
-  </footer>
+  <div class="wrapper">
+    <Header />
+    <RouterView />
+    <Footer/>
+  </div>
 </template>
 
 <style scoped>
+  .wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
 </style>
