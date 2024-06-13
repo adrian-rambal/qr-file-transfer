@@ -1,3 +1,6 @@
+<script setup lang="ts">
+import MiniComponent from "@/components/MiniComponent.vue"
+</script>
 
 <template>
      <section class="section">
@@ -12,14 +15,10 @@
             My first website with <strong>Bulma</strong>!
         </p>
         </div>
+        <MiniComponent></MiniComponent>
   </section>
 </template>
 
-<!-- <script setup>
-import { ref } from "vue";
-
-const date = ref();
-</script> -->
 
 <style lang="scss">
     @forward "~bulma/sass/elements/button";
