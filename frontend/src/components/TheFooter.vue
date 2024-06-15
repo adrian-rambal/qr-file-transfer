@@ -1,6 +1,6 @@
 <template>
-<footer class="footer">
-    <div class="content has-text-centered mt-auto">
+<footer class="footer mt-auto">
+    <div class="content has-text-centered">
       <p>
         <strong>{{$t('message.appName')}}</strong> {{$t('message.footer.authoring')}}.  
       </p>

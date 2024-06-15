@@ -5,17 +5,18 @@ import Footer from '@/components/TheFooter.vue'
 </script>
 
 <template>
-  <div class="wrapper">
+  <div class='hero is-fullheight'>
     <Header />
-    <RouterView />
+    <RouterView/>
     <Footer/>
   </div>
 </template>
 
 <style scoped>
+  html, body {min-height: 100vh;}
   .wrapper {
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    /* min-height: 100vh; */
+    /* display: flex; */
+    /* grid-template-rows: auto 1fr auto; */
   }
 </style>

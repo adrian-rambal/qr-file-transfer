@@ -3,13 +3,20 @@ import FileUpload from "./FileUpload.vue";
 </script>
 
 <template>
-     <section class="section">
-      <div class="grid">
-        <div class="cell">
-          <FileUpload></FileUpload>
-        </div>
-        <div class="cell">Recieve</div>
-      </div>  
+  <section class="section is-large">
+  <div class="columns">
+    <div class="column is-6">
+      <!-- <div class="container"> -->
+        <FileUpload></FileUpload>
+      <!-- </div> -->
+    </div>
+    <div class="column is-narrow" style="width: 6px;">
+
+    </div>
+    <div class="column is-6">
+      <FileUpload></FileUpload>
+    </div>
+  </div>
   </section>
 </template>
 
