@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import FileUpload from "./FileUpload.vue";
+import ReceiveFile from "./ReceiveFile.vue";
+
 </script>
 
 <template>
@@ -10,11 +12,11 @@ import FileUpload from "./FileUpload.vue";
         <FileUpload></FileUpload>
       <!-- </div> -->
     </div>
-    <div class="column is-narrow" style="width: 6px;">
+    <!-- <div class="column is-narrow" style="width: 6px;">
 
-    </div>
+    </div> -->
     <div class="column is-6">
-      <FileUpload></FileUpload>
+      <ReceiveFile></ReceiveFile>
     </div>
   </div>
   </section>

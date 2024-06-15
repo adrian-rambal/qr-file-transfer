@@ -13,7 +13,7 @@ import Footer from '@/components/TheFooter.vue'
 </template>
 
 <style scoped>
-  html, body {min-height: 100vh;}
+  html, body {min-height: 100vh;max-height: 100vh;}
   .wrapper {
     /* min-height: 100vh; */
     /* display: flex; */
