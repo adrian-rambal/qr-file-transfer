@@ -1,15 +1,30 @@
 import { createApp } from 'vue'
-import { createI18n } from 'vue-i18n'
 import App from './App.vue'
 //import "@/assets/main.css"
 import "@/assets/main.scss"
 
-const i18n = createI18n({
+
+const app = createApp(App)
+
+// Configuration
+import router from './router'
+function configRouter() {
+  app.use(router)
+}
+
+import { createI18n } from 'vue-i18n'
+function configi18n() {
+  const i18n = createI18n({
     locale: 'en',
     fallbackLocale: 'en',
     messages: {
       en: {
         message: {
+          component:{
+            fileUpload: {
+              hint: 'Choose file...'
+            }
+          },
           appName: 'QtoR - File transfer',
           footer: {
             authoring: 'by Adrian Rambal',
@@ -20,11 +35,28 @@ const i18n = createI18n({
       }
     }
   })
-const app = createApp(App)
+  app.use(i18n)
+}
 
-import router from './router'
-app.use(router)
 
-app.use(i18n)
+
+
+
+// End configuration
+
+
+
+configRouter();
+configi18n();
+
+import MobileDetectionPlugin from './plugin/MobileDetection';
+import type FileUpload from './components/FileUpload.vue'
+app.use(MobileDetectionPlugin);
 
 app.mount('#app')
+
+
+
+
+
+

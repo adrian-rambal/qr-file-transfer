@@ -15,6 +15,7 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       '~bulma': resolve(__dirname, 'node_modules/bulma'),
+      '~fontawesome': resolve(__dirname, 'node_modules/@fortawesome/fontawesome-free'),
     }
   }
 })
